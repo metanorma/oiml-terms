@@ -29,16 +29,13 @@ jobs:
 
       - name: Install concept-browser
         run: |
-          git clone --depth 1 https://github.com/glossarist/concept-browser.git /tmp/cb
-          cd /tmp/cb && npm install --ignore-scripts
-          npm install --prefix /tmp/cb sharp 2>/dev/null || true
+          npm install --ignore-scripts @glossarist/concept-browser
+          npm install --prefix node_modules/@glossarist/concept-browser sharp 2>/dev/null || true
 
       - name: Build site
-        run: node /tmp/cb/cli/index.mjs build
+        run: npx concept-browser build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_PATH: /oiml-terms/
-          DATASET_SOURCE_G18: ${{ github.workspace }}/g18-glossarist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

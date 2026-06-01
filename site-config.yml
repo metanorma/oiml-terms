@@ -1,6 +1,7 @@
 id: g18
 domain: g18.oiml.info
 uriBase: https://g18.oiml.info
+basePath: /oiml-terms/
 title: G 18
 subtitle: Alphabetical List of Terms Defined in OIML Recommendations and Documents
 description: Terminology from the Alphabetical List of Terms Defined in OIML Recommendations and Documents (OIML G 18:2010)
@@ -22,6 +23,7 @@ datasets:
     uriAliases:
       - "urn:oiml:pub:g:18:2010*"
     sourceRepo: https://github.com/metanorma/oiml-terms
+    localPath: g18-glossarist
     title: "G 18 — Alphabetical List of Terms Defined in OIML Recommendations and Documents"
     description: "Term definitions from the Alphabetical List of Terms Defined in OIML Recommendations and Documents (OIML G 18:2010)"
     translations:
