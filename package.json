@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "description": "G 18 — Alphabetical List of Terms Defined in OIML Recommendations and Documents — deployment config for @glossarist/concept-browser",
+  "scripts": {
+    "build": "npx concept-browser build",
+    "dev": "DATASET_SOURCE_G18=$(pwd)/g18-glossarist node node_modules/@glossarist/concept-browser/node_modules/.bin/vite --config node_modules/@glossarist/concept-browser/vite.config.ts"
+  }
+}

@@ -1,0 +1,84 @@
+id: g18
+domain: g18.oiml.info
+uriBase: https://g18.oiml.info
+title: G 18
+subtitle: Alphabetical List of Terms Defined in OIML Recommendations and Documents
+description: Terminology from the Alphabetical List of Terms Defined in OIML Recommendations and Documents (OIML G 18:2010)
+
+translations:
+  fra:
+    subtitle: Liste alphabétique des termes définis dans les Recommandations et les Documents OIML
+    description: Terminologie de la Liste alphabétique des termes définis dans les Recommandations et les Documents OIML (OIML G 18:2010)
+
+uiLanguages:
+  - code: eng
+    label: English
+  - code: fra
+    label: Français
+
+datasets:
+  - id: g18
+    uri: "urn:oiml:pub:g:18:2010"
+    uriAliases:
+      - "urn:oiml:pub:g:18:2010*"
+    sourceRepo: https://github.com/metanorma/oiml-terms
+    title: "G 18 — Alphabetical List of Terms Defined in OIML Recommendations and Documents"
+    description: "Term definitions from the Alphabetical List of Terms Defined in OIML Recommendations and Documents (OIML G 18:2010)"
+    translations:
+      fra:
+        title: "G 18 — Liste alphabétique des termes définis dans les Recommandations et les Documents OIML"
+        description: "Définitions de termes de la Liste alphabétique des termes définis dans les Recommandations et les Documents OIML (OIML G 18:2010)"
+    owner: OIML
+    color: "#004996"
+    tags: [metrology, legal, oiml, terminology]
+    languages: [eng, fra]
+    languageOrder: [eng, fra]
+
+routing: []
+
+branding:
+  primaryColor: "#004996"
+  darkColor: "#003366"
+  fonts:
+    header:
+      family: "Source Serif 4"
+      source: "google"
+      weights: [400, 600]
+    body:
+      family: "Source Sans 3"
+      source: "google"
+      weights: [400, 500, 700]
+  logo:
+    path: /logos/oiml-logo.svg
+    alt: OIML
+    localPath: logos/oiml-logo.svg
+    localLight: logos/oiml-logo-icon-light.svg
+    localDark: logos/oiml-logo-icon-dark.svg
+  ownerName: OIML
+  ownerUrl: "https://www.oiml.org"
+
+features:
+  news: false
+  stats: true
+  graph: true
+  about: true
+  search: true
+  poweredBy:
+    title: "Glossarist"
+    url: "https://glossarist.org"
+
+pages:
+  - type: about
+    route: about
+    title: About
+    icon: info
+    source: about.md
+    translations:
+      fra:
+        title: À propos
+        source: about-fra.md
+
+defaults:
+  language: eng
+
+copyright: "OIML"
